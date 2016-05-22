@@ -21,7 +21,7 @@ $(document).ready(function() {
 	var fizzBuzzMax = "+" + prompt("Enter the max number for fizzin' and buzzin'");
 
 	while (isNaN(fizzBuzzMax) || fizzBuzzMax < 1 || fizzBuzzMax % 1 != 0) {
-		fizzBuzzMax = parseInt(prompt("The max number must be an integer greater than 0!  Try again."));
+		fizzBuzzMax = "+" + prompt("The max number must be an integer greater than 0!  Try again.");
 	}
 
 	$('body').append(fizzBuzz(fizzBuzzMax));
